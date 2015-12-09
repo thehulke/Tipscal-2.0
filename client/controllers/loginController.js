@@ -6,7 +6,7 @@
     console.log('loginCtrl');
     var ref = tipCalService.ref();
     var syncObject = $firebaseObject(ref);
-    syncObject.$bindTo($scope, 'data');
+    // syncObject.$bindTo($scope, 'data');
     var auth = $firebaseAuth(ref);
 
     // verify and check state
