@@ -19,7 +19,15 @@ console.log('router');
         controller: 'userCtrl',
         controllerAs: 'user',
         templateUrl: 'client/views/userTemplate.ng.html',
-      });
+      })
+      .state('tipForm', {
+        url:'/:userId/tipform',
+        controller: 'tipForm',
+        controllerAs: 'form',
+        templateUrl: 'client/views/tipFormTemplate.ng.html'
+      })
+
+      ;
 
   }
 

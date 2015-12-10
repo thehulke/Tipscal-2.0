@@ -1,6 +1,8 @@
 (function(angular) {
   angular.module('tipCal')
-    .controller('userCtrl', ['$scope', 'tipCalService', '$firebaseObject', '$firebaseAuth', '$rootScope', '$stateParams', '$state', '$timeout', userCtrl]);
+    .controller('userCtrl', userCtrl);
+
+  userCtrl.$inject =  ['$scope', 'tipCalService', '$firebaseObject', '$firebaseAuth', '$rootScope', '$stateParams', '$state', '$timeout'];
 
   function userCtrl($scope, tipCalService, $firebaseObject, $firebaseAuth, $rootScope, $stateParams, $state, $timeout) {
 
@@ -20,6 +22,10 @@
     }
 
     this.userName = authData.facebook.displayName;
-
+    this.goToForm = function(){
+      $state.go('tipForm', {
+        userId : authData.uid
+      })
+    }
   }
 }(angular));

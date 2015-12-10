@@ -1,0 +1,34 @@
+{
+  "restaurants": {
+    "goocha-ramat": {
+      "dataTips": {
+        "cashPerHour": "total of money divide by total hours",
+        "date": "new date",
+        "shift": ["morning", "evening"],
+        "tipForm": [{
+          "hours": "hours",
+          "uid": "user id"
+        }, {
+          "hours": "hours",
+          "uid": "user id"
+        }],
+        "totalCredit": "total credit",
+        "totalHours": "sum of divide.uid.hours",
+        "totalash": "total cash"
+      },
+      "id": "1000",
+      "users": {
+        "facebook:10153750004091250": {
+          "jobType": "bartender",
+          "premission": "admin"
+        }
+      }
+    }
+  },
+  "users": {
+    "facebook:10153750004091250": {
+      "name": "Lior Gerstein",
+      "provider": "facebook"
+    }
+  }
+}

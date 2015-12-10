@@ -24,9 +24,8 @@
 
         console.log("User " + authData.uid + " is logged in with " + authData.provider);
         var userId = authData.uid;
-        $state.go('user', {
-          userId: userId
-        });
+        return 1;
+
       } else {
         console.log("User is logged out");
         $state.go('login');
